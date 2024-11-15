@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="beeb6592c3799e100eb3554d0501313d" label="Mutual Funds" max_length="40" name="x_58872_needit_mutual_funds" type="collection">
+        <element label="SchemeCode" max_length="40" name="schemecode" type="string"/>
+        <element display="true" label="SchemeName" max_length="40" name="schemename" type="string"/>
+    </element>
+</database>

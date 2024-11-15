@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>SearchGET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Get Mutual Funds [ SearchGET ]</qualified_name>
+        <rest_endpoint>https://api.mfapi.in/mf/search</rest_endpoint>
+        <rest_message display_value="Get Mutual Funds">1661dd42c3f15e100eb3554d050131b1</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 06:10:20</sys_created_on>
+        <sys_id>4bf0599ec3b59e100eb3554d050131e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SearchGET</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_rest_message_fn_4bf0599ec3b59e100eb3554d050131e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 06:10:20</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>fb53d03adb150a1437d72a59139619f1</instance_id>
+        <instance_name>dev254867</instance_name>
+        <name>sys_rest_message_fn_4bf0599ec3b59e100eb3554d050131e5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>SearchGET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Get Mutual Funds [ SearchGET ]</qualified_name><rest_endpoint>https://api.mfapi.in/mf/search</rest_endpoint><rest_message display_value="Get Mutual Funds">1661dd42c3f15e100eb3554d050131b1</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-13 06:10:20</sys_created_on><sys_id>4bf0599ec3b59e100eb3554d050131e5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SearchGET</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_rest_message_fn_4bf0599ec3b59e100eb3554d050131e5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-13 06:10:20</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>1151862916</payload_hash>
+        <record_name>SearchGET</record_name>
+        <reverted_from/>
+        <source>c805b621c331da100eb3554d050131e7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 06:10:20</sys_created_on>
+        <sys_id>ec51599ec3b59e100eb3554d050131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1932424f0830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 06:10:20</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>e051599e9cb59e10da3f89f6a836eda0</update_guid>
+        <update_guid_history>e051599e9cb59e10da3f89f6a836eda0:1151862916</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 06:19:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>407a36deb7ce49549d346efd02a10d61</sys_id>
+        <sys_metadata>4bf0599ec3b59e100eb3554d050131e5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SearchGET</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Get Mutual Funds">1661dd42c3f15e100eb3554d050131b1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_4bf0599ec3b59e100eb3554d050131e5</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_4bf0599ec3b59e100eb3554d050131e5">ec51599ec3b59e100eb3554d050131a0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 06:19:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

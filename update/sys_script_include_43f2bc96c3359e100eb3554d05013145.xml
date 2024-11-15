@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.MutualFunds</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>gets Mutual Funds data</description>
+        <mobile_callable>false</mobile_callable>
+        <name>MutualFunds</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var MutualFunds = Class.create();
+MutualFunds.prototype = {
+    initialize: function() {
+    },
+	_search: function(search_query) {
+		try { 
+			var gr = new GlideRecord('x_58872_needit_mutual_funds');
+			var r = new sn_ws.RESTMessageV2('x_58872_needit.Get Mutual Funds', 'Default GET');
+			r.setQueryParameter("sysparm_query", search_query);
+			var response = r.execute();
+			var responseBody = response.getBody();
+			gr.setValue('schemeCode', 'schemeCode');
+			gr.setValue('schemeName', 'schemeName');
+			for(var m in mutualFunds) {
+				if(m < 10) {
+					gs.info(mutualFunds[m].schemeCode + " -> " + mutualFunds[m].schemeName );
+					gr.insert(m);
+				}
+			}
+			gr.execute();
+			var httpStatus = response.getStatusCode();
+		}
+		catch(ex) {
+ 			var message = ex.message;
+		}
+	},
+    type: 'MutualFunds'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 10:27:37</sys_created_on>
+        <sys_id>43f2bc96c3359e100eb3554d05013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MutualFunds</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_43f2bc96c3359e100eb3554d05013145</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 10:27:37</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>43f2bc96c3359e100eb3554d05013145</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 10:27:37</sys_created_on>
+        <sys_id>dd3c82d6c3f99e100eb3554d0501311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 10:27:37</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

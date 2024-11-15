@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bed360c6c3fd1e100eb3554d050131e2" label="IMDB" max_length="40" name="x_58872_needit_imdbdb" type="collection">
+        <element choice="3" label="Rating" max_length="40" name="rating" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="R" value="Restricted"/>
+                <element inactive_on_update="false" label="G" value="General"/>
+                <element inactive_on_update="false" label="PG" value="Parental Guidance"/>
+            </choice>
+        </element>
+        <element display="true" label="Movie name" max_length="40" name="movie_name" type="string"/>
+        <element label="director" max_length="40" name="director" reference="sys_user" type="reference"/>
+        <element label="Release Date" max_length="40" name="release_date" type="glide_date"/>
+    </element>
+</database>
